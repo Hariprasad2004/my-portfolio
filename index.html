@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fasolid">HP</i>
+                    <div class="logotext">Hari Prasad</div>
+
+                </div>
+                <nav>
+                    <div class="togglebutton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="lunks">
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#Internship">Internship</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="heropic">
+                    <img src="hero.jpeg" aria-details="hero-pic">
+                </div>
+                <div class="herotext">
+                    <h5>Birans,chill & <span class="input"></span> That's</h5>
+                    <h1>Hari Prasad</h1>
+                    <p>I’m a passionate engineer with hands-on experience in Programing
+                         and web development, dedicated to building innovative tech 
+                         solutions. With a strong creative edge and problem-solving 
+                         mindset, I turn ideas into impactful real-world projects. 
+                         Driven by curiosity and challenges, I constantly strive to 
+                         shape the future through technology.
+                    </p>
+                    <div class="but">
+                        <a href="https://drive.google.com/file/d/1tHuo32RqKUPhr1zJSgPgC697iZ_d_bSl/view?usp=sharing" class="btnactive b">Download CV</a>
+                        <a href="#contact" class="btnactive">Contact</a>
+                    </div>
+                    <div class="social">
+                    <a href="https://www.linkedin.com/in/hari-prasad-r-891981305/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/hp_2k4_kmph/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Hariprasad2004"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 style="width: 100%">Education</h3>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebutton=document.querySelector(".togglebutton");
+        var nav=document.querySelector(".lunks");
+        var lunks=document.querySelector(".lunks li");
+        togglebutton.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+        var typed=new Typed(".input",{
+            strings:["Software Developer","Frontend Developer"],
+            typedSpeed:70,
+            backSpeed:100,
+            loop:true
+        })
+    </script>
+<div>
+    <span class="edu">
+        <table>
+            <tr>
+                <td>Narayana E-Techno Neelankarai</td>
+                <td>SSLC</td>
+                <td>82.8%</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Jawahar HSS Neyveli</td>
+                <td>HSLC</td>
+                <td>68.9%</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>RMD Engineering College</td>
+                <td>B.E ECE</td>
+                <td>7.53(6th)</td>
+                <td>2026</td>
+            </tr>
+        </table>
+    </span>
+</div>
+<section id="project">
+    <h3 style="padding-top:30px ;">Project</h3>
+</section> 
+<div class="pro"> 
+<h1>Plant Disease Detection Using ML and IoT</h1>
+<p>Jan 2024</p>
+<h2>
+Developed a machine learning model using CNN to detect plant leaf 
+ diseases and integrated IoT sensors for soil condition monitoring.
+</h2>
+
+<h1>Underground Sewage Device</h1>
+<p>March 2024</p>
+<h2>
+    Designed a sensor-based system to detect hazardous gas levels and 
+ alert maintenance personnel and assist in clearing clogs.
+</h2>
+<h1>Overtake Assist</h1>
+<p>Jan 2025</p>
+<h2>Built an image processing model using YOLO and an ultrasonic sensor
+to detect whether the trailing vehicle is accelerating or decelerating</h2>
+
+<h1>Hearing Aid Using FPGA</h1>
+<p>Ongoing</p>
+<h2>Developing FPGA-based hearing aid. Using MIMC, an FPGA board and a 
+speaker to develop a low-latency, high-precision hearing aid.</h2>
+</div>
+<div class="cour">
+    <section id="courses"></section>
+    <nav>
+        <h3 style="padding-top: -30px;">Courses</h3>
+    <ol>
+        <div class="t">
+        <li>Web-Development-Internshala</li>
+        <li>Java-Infosys Springboard <img src="ja.jpg"></li>
+        <li>JavaScript-Infosys Springboard <img src='jspic.jpeg'></li>
+        <li>C-Infosys Springboard <img src='c.jpeg'></li>
+        <li>C++-Infosys Springboard <img src='cpp.jpeg'></li>
+        <li>System Design Through Verilog-NPTEL <img src='cer.jpg'></li>
+        <li>Analog Circuits-NPTEL <img src='analo.jpg'></li>
+        </div>
+    </ol>
+    </nav>
+</div>
+<div class="int">
+    <section id="Internship"></section>
+    <nav>
+        <h3>Internship</h3>
+    <ol>
+        <li>Machine Learning @ Trios Technology<img src="trio.jpeg"></li>
+        <li>UI/UX @ CodSoft <img src="cod.jpg"></li>
+        <li>Web Development @ DLK Technology<img src="dlk.jpeg"></li>
+        <li>Inplant Training @ NLC India<img src="nlc.jpeg"></li>
+        <li>Frontend Develepment @ Internshala</li>
+    </ol>
+    </nav>
+</div>
+<div class="ach">
+    <h3>Achievements</h3>
+    <span><h2>Gold Medal-Tennis</h2><p>Inter-department</p>
+    </span>
+    <span><h2>Gold Medal-Ball Badminton</h2><p>Inter-department</p></span>
+</div>
+<section id="contact" class="contact-section">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:hariprasadrammohan@gmail.com">hari.yourmail@gmail.com</a></p>
+    <p>Phone: +91 8903862644</p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: #222;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh; /*used to utilise 100% of the viewport*/
+    background: #222;
+}
+.wrapper{
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 40px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 5px; 
+    cursor: pointer;
+    text-align: center;
+}
+.logo .logotext{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+nav .togglebutton{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;    
+}
+nav .togglebutton span{
+    display: block;
+    background-color: #007ced; 
+    margin: 5px 0px;
+    width: 100%;
+    height: 2px;
+    transition: 0.3s;
+    transition-property: transform, opacity;  
+}
+nav .lunks{
+    list-style-type: none;
+}
+nav .lunks li{
+    display: inline-block;
+}
+nav .lunks li a{
+    color: white;
+    margin-right:  2.5rem; ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    justify-content: space-around;
+}
+.container .heropic{
+    border-radius: 50%;
+    width: 340px;
+    height: 400px;
+    overflow: hidden;
+    border: 13px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.heropic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.heropic img:hover{
+    transform: scale(1.2);
+}
+.herotext{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.herotext h5{
+    color: antiquewhite;
+    font-size: 12px;
+}
+.herotext h5 span{
+    color: #007ced;
+    font-size: 14px;
+}
+.herotext h1{
+    font-size: 3rem;
+    color: #007ced;
+}
+.herotext p{
+    color: beige;
+}
+.but{
+    margin: 45px 0;
+}
+.but .btnactive{
+    border-color: white;
+    color: white;
+    background-color: rgb(55, 52, 52);
+    padding: 12px 25px;
+    margin: 5px 0;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-right: 9px;
+}
+.btnactive.b{
+    border-color: #007ced;
+}
+.herotext .social i{
+    color: antiquewhite;
+    font-size: 18px;
+    margin-right: 10px;
+    transform: 0.5s;
+}
+.herotext .social i:hover{
+    color: #007ced;
+    transform: rotate(360deg);
+}
+nav .lunks li a:hover{
+    color:#007ced;
+
+}
+
+div .but a:hover{
+    color:#007ced;
+}
+table{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    border-spacing: 50px;
+    color: aliceblue;
+    border: 1px solid rgb(55, 52, 52);
+    border-width: 20px;
+}
+#project h3{
+    font-size: 40px;
+    color: #007ced;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.hero h3{
+    font-size: 40px;
+    color: #007ced;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.pro p,.ach p{
+    color: #a6a4a4;
+}
+.pro h1,h2{
+    color: white;
+}
+.pro h2{
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.pro h1{
+    color: aquamarine;
+}
+.pro,.cour{
+    line-height:1.5;
+    width: 90%;
+    justify-content: center;
+    display: inline-block;
+    padding-left: 5%;
+}
+.cour h3{
+
+    padding-bottom: 10px;
+    color:#007ced;
+    font-size: 40px;
+    display: flex;
+    
+}
+.cour{
+    line-height: 3;
+}
+.section-box {
+    padding-top: 50px;
+    line-height: 1.5;
+    width: 90%;
+    padding-left: 5%;
+    display: inline-block;
+}
+
+.section-box h3 {
+    padding-bottom: 10px;
+    color: #007ced;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-box li {
+    font-size: 22px;
+    color: aquamarine;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 2.5;
+}
+
+.section-box img {
+    width: 10px;
+    height: 10px;
+    transition: transform 0.2s;
+}
+
+.section-box img:hover {
+    transform: scale(2);  /* Reasonable zoom effect */
+}
+.ach p{
+    padding-left: 5%;
+}
+.cour li{
+    font-size: 22px;
+    color: aquamarine;
+    display: flex;
+}
+.cour li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* optional spacing between text and image */
+}
+
+.cour li img {
+    transition: transform .2s;
+    width: 10px;
+    height: 10px;
+}
+
+.cour li img:hover {
+    transform: scale(60); /* You had 60.0, which is likely a typo */
+}
+
+.int h3{
+    padding-top: 40px;
+    display: inline-block;
+    padding-left: 5%;
+    width: 90%;
+    font-size: 40px;
+    color: #007ced;
+    padding-bottom: 40px;
+}
+.int li,.ach h2{
+    font-size: 22px;
+    color: aquamarine;
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+    gap: 10px;
+    line-height: 3;
+}
+.int img{
+    width: 10px;
+    height: 10px;
+    transition: transform .2s;
+}
+.int li img:hover{
+    transform: scale(60); 
+}
+
+.ach h3{
+    padding-top: 40px;
+    color: #007ced;
+    font-size: 40px;
+    display: flex;
+    padding-left: 5%;
+
+}
+@media(max-width:930px){
+    nav .togglebutton{
+        display: initial;
+    }
+    .click{
+        top: 45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-45deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .lunks{
+        position: absolute;
+        top: 110px;
+        right: -100%;
+        bottom: 0;
+        height: 100vh;
+        background-color:#222 ;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .lunks li{
+        display: block;
+    }
+    nav .lunks li  a{
+        display: block;
+        margin-top:15px;
+        text-align: center;
+    }
+    nav .lunks.open{
+        right: 0;
+    }
+}
+
+@media(max-width:768px)
+{
+    .heropic{
+        width: 240px;
+        height: 280px;
+    }
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    } 
+    .herotext{
+        padding: 40px 0px;
+    }
+
+}
+.contact-section {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.contact-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-section h3 {
+    margin-bottom: 20px;
+}
